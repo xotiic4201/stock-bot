@@ -2,3 +2,6 @@ fastapi
 uvicorn[standard]
 discord.py
 aiohttp
+aiofiles
+python-multipart
+Pillow
