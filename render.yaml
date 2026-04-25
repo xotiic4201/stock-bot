@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: gag-monitor
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false          # Set this manually in Render dashboard
+      - key: BOT_OWNER_ID
+        sync: false          # Your Discord user ID for admin DMs
+      - key: PUBLIC_URL
+        fromService:
+          type: web
+          name: gag-monitor
+          property: host
+      - key: DB_PATH
+        value: /tmp/gag_monitor.db
+    disk:
+      name: db-storage
+      mountPath: /data
+      sizeGB: 1
