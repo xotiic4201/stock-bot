@@ -1,9 +1,3 @@
-#!/usr/bin/env python3
-"""
-Grow a Garden Complete Stock Monitoring System
-with Xotiis Marketplace - FULLY WORKING for Render.com
-"""
-
 import asyncio
 import json
 import logging
@@ -34,8 +28,8 @@ logger = logging.getLogger(__name__)
 
 # ============ Configuration ============
 DISCORD_TOKEN = os.environ.get("DISCORD_TOKEN", "")
-PUBLIC_URL = os.environ.get("PUBLIC_URL", "http://localhost:8000")
-DB_PATH = os.environ.get("DB_PATH", "/tmp/grow_a_garden.db")
+PUBLIC_URL = os.environ.get("PUBLIC_URL")
+DB_PATH = os.environ.get("DB_PATH", "/tmp/grow_a_gardten.db")
 
 # ============ Database ============
 class Database:
