@@ -1,4 +1,4 @@
-fastapi>
-uvicorn[standard]>
-discord.py>
+fastapi
+uvicorn[standard]
+discord.py
 aiohttp>
