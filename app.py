@@ -1,9 +1,3 @@
-"""
-Grow a Garden - Stock Monitoring System
-Single-file app: FastAPI web server + Discord bot + WebSocket listener
-Deploy on Render.com with environment variables: DISCORD_TOKEN, PUBLIC_URL, BOT_OWNER_ID
-"""
-
 import asyncio
 import json
 import logging
